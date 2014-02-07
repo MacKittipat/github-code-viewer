@@ -14,9 +14,16 @@
         "tabs",
         "activeTab"
     ],
-    
     "content_scripts": [{
             "matches": ["https://github.com/*"],
             "css": ["style.css"]
-    }]
+    }],
+    "commands": {
+        "_execute_page_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "MacCtrl+Shift+F"
+            }
+        }
+    }
 }
